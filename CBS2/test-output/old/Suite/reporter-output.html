@@ -1,0 +1,38 @@
+<h2>Reporter output</h2><table><tr><td>
+Server URL : https://qa-nb-collections.novopay.in/api-gateway/api/novopay/v1/getEncryptionKey</td></tr>
+<tr><td>
+Total time taken for the post request is : 2.64 Seconds ...</td></tr>
+<tr><td>
+Request sent is 
+{"headers":{"actor_type":"CUSTOMER","operation_mode":"SELF","channel_code":"NOVOPAY","locale":"en-in","function_sub_code":"DEFAULT","function_code":"DEFAULT","end_channel_code":"AIG","run_mode":"REAL","user_id":"46","stan":"IOQeg","user_handle_value":"admin","location":"44.968046,-94.420307","client_ip":"127.0.0.1","user_handle_type":"MSISDN","transmission_datetime":"1601893864346","client_code":"NOVOPAY","tenant_code":"fk"},"request":{"key_type":"MPIN-ENCRYPTION-KEY"}}</td></tr>
+<tr><td>
+Response Obtained : {"response_status":{"code":"40032","message":"Encryption key fetched successfully","status":"SUCCESS"},"key_value":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAs+CLAhBZbP0MWBY5ka6EKCId2FAIV2ygFkNPhGfxXuqGNdQYRDwbSSYRRYwozRBnN4ooJ0XeGMofD9VLQWsCNvGmJxE2oC4wgDaYDWwjKfehFvwIs6RenJJa7RRcYwFsWAIHzvLHCxGugxAZbjLhMvP+1E0DAiSGN\/L\/UTdCkxfr4XzlTMi0kcirHLgiAdIIy7F7zRjtw6pcVkzRbwHOhT6rus4MpThYhMIoY6CYpwsF+ryqlqExl1bp0xydtf2CGFjKvlIxxU0yTMx1\/ce3ewmVpFKkNgfQOPOe18RGB45W6GjtCZAO5rSslg465T1bahrEABbEfSxBQDgARfLsVQIDAQAB"}</td></tr>
+<tr><td>
+Response code Assertion successful..!</td></tr>
+<tr><td>
+Response status assertion successful..!</td></tr>
+<tr><td>
+Server URL : https://qa-nb-collections.novopay.in/api-gateway/api/novopay/v1/login</td></tr>
+<tr><td>
+Total time taken for the post request is : 0.798 Seconds ...</td></tr>
+<tr><td>
+Request sent is 
+{"headers":{"actor_type":"CUSTOMER","operation_mode":"SELF","channel_code":"NOVOPAY","locale":"en-in","function_sub_code":"DEFAULT","function_code":"DEFAULT","end_channel_code":"AIG","run_mode":"REAL","user_id":"46","stan":"XlPa1","user_handle_value":"admin","location":"44.968046,-94.420307","client_ip":"127.0.0.1","user_handle_type":"MSISDN","transmission_datetime":"1601893867776","client_code":"NOVOPAY","tenant_code":"fk"},"request":{"handle_value":"9122900031","auth_type":"MPIN","handle_type":"MSISDN","auth_value":"TzVVM1JyTk1WN21FNXdndTZIZFVaUHVQV3huZmw0aVpzNEw0UGxibk5XV3RzM1JuSUhzWEpwZ2t3eGk1ZDZkQ29PT3pORi96Q1UwTWVYRE84WkR5UHJBMVFLWnhtdVl2dDBmVHNoMDhnVmJSVmdVa20xaUFHZGlZd0RiRjMvNFhESFNVZmZtdC8vWlBacytQV1lyb1hQZm5xb2NWRnhBRjNBZDhHVVR3NHdpNlR2VHFhMkVROXphREVwdVJ2ei8vUUxHUHNJTXI5azlVMmxmUTBKRlNZQnBnMytxczFTTjZCRmxsbkhJZEluUG92L1BoaU04YndwUkYxdXc4YmpzQjgxaVdUM3FvbENIcjlBak1DTWU5S3RZbjVueHl2UTlvWCs5aWVmaDE3a1JsazFIbmxuRWxmZ3ZZMkVIanpvcXNjKzRMbzk4RHpqMG1RSGdoL3Q2WDl3PT0="}}</td></tr>
+<tr><td>
+Response Obtained : {"response_status":{"code":"220059","message":"Incorrect Username or Password","status":"FAIL"}}</td></tr>
+<tr><td>FAILURE..! Assertion for login response code failed..! expected [40033] but found [220059]</td></tr>
+<tr><td>FAILURE..! Assertion for login response status failed..! expected [SUCCESS] but found [FAIL]</td></tr>
+<tr><td>FAILURE..! Assertion for login response message failed..! expected [Encryption key fetched successfully] but found [Incorrect Username or Password]</td></tr>
+<tr><td>
+Server URL : https://qa-nb-collections.novopay.in/api-gateway/api/novopay/v1/createOrUpdateCollection</td></tr>
+<tr><td>
+Total time taken for the post request is : 0.746 Seconds ...</td></tr>
+<tr><td>
+Request sent is 
+{"headers":{"tenant_code":"fk","client_code":"novopay","channel_code":"API","end_channel_code":"Novopay","stan":"LxuIp","client_ip":"172.16.8.245","locale":"en-in","transmission_datetime":"1601893869177","operation_mode":"SYSTEM","run_mode":"REAL","actor_type":"ADMIN","user_handle_type":"MSISDN","user_handle_value":"admin","location":"42,23","function_code":"COLLECTION","function_sub_code":"UPDATE","user_id":"46"},"request":{"timestamp":"1599729076322","collectionId":"568","customer":{"ffbUserId":"555","name":"GOLU","shopName":"GOLU BHARTI","contactDetails":{"telecomContact":{"primaryPhoneNumber":"9538948876"},"postalContact":{"pincode":"560100","locality":"Rajbanshi nagar","street":"road no 2","city":"patna","state":"bihar"}}},"dueDetails":{"amount":"25000","generatedDate":"2020-09-06","dueDate":"2020-09-15","productCategory":"Grocery","dpdBucketId":"2"}}}</td></tr>
+<tr><td>
+Response Obtained : {"response_status":{"code":"11018","message":"Invalid Session","status":"FAIL"}}</td></tr>
+<tr><td>FAILURE..! Assertion for createOrUpdateCollection response code failed..! expected [40038] but found [11018]</td></tr>
+<tr><td>FAILURE..! Assertion for createOrUpdateCollection response status failed..! expected [SUCCESS] but found [FAIL]</td></tr>
+<tr><td>FAILURE..! Assertion for createOrUpdateCollection response message failed..! expected [Agent (oKRSu) - Creation sent for approval] but found [Invalid Session]</td></tr>
+</table>

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Suite">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
+                    <span>C:\Users\Anurag Bharti\eclipse-workspace\CBS2\DemoData.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">2 methods, 2 failed,   </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="in.novopay.cbs.apis.ActorMicroservice.createorupdatecollection.CreateOrUpdateCollectionTest" hash-for-method="createOrUpdateCollectionTest({extProductType=SAVINGS, mobileNumber=8778687679, baseOfficeId=1, businessRegistrationCountry=IN, ag...)">createOrUpdateCollectionTest({extProductType=SAVINGS, mobileNumber=8778687679, baseOfficeId=1, businessRegistrationCountry=IN, ag...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="in.novopay.cbs.apis.login.LoginTest" hash-for-method="loginTest({codes=40033, request=Yes, channel_code=NOVOPAY, Authorization=no, function_sub_code=DEFAULT, passwo...)">loginTest({codes=40033, request=Yes, channel_code=NOVOPAY, Authorization=no, function_sub_code=DEFAULT, passwo...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">in.novopay.cbs.apis.login.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest({codes=40033, request=Yes, channel_code=NOVOPAY, Authorization=no, function_sub_code=DEFAULT, passwo...)">
+                  </a> <!-- loginTest({codes=40033, request=Yes, channel_code=NOVOPAY, Authorization=no, function_sub_code=DEFAULT, passwo...) -->
+                  <span class="method-name">loginTest</span>
+                  <span class="parameters">({codes=40033, request=Yes, channel_code=NOVOPAY, Authorization=no, function_sub_code=DEFAULT, password=real, function_code=DEFAULT, DESCRIPTION=Happy flow., TESTTYPE=Positive, user_handle_value=admin, client_ip=127.0.0.1, Content-Type=application/json, transmission_datetime=Dynamic, handle_value=9122900031, headers=Yes, auth_type=MPIN, EXECUTIONMODE=Yes, Accept=application/json, actor_type=CUSTOMER, operation_mode=SELF, auth_value=1234, message=Encryption key fetched successfully, TCID=LoginTest_001, handle_type=MSISDN, end_channel_code=AIG, run_mode=REAL, stan=Dynamic, location=44.968046,-94.420307, user_handle_type=MSISDN, status=SUCCESS, tenant_code=fk, client_code=NOVOPAY})</span>
+                  <div class="stack-trace">java.lang.AssertionError: TEST FAILED!!! Assertion error..!
+	at in.novopay.cbs.utils.ApiUtils.assertAPIResponseStatus(ApiUtils.java:304)
+	at in.novopay.cbs.apis.login.LoginTest.loginTest(LoginTest.java:49)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">in.novopay.cbs.apis.ActorMicroservice.createorupdatecollection.CreateOrUpdateCollectionTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createOrUpdateCollectionTest({extProductType=SAVINGS, mobileNumber=8778687679, baseOfficeId=1, businessRegistrationCountry=IN, ag...)">
+                  </a> <!-- createOrUpdateCollectionTest({extProductType=SAVINGS, mobileNumber=8778687679, baseOfficeId=1, businessRegistrationCountry=IN, ag...) -->
+                  <span class="method-name">createOrUpdateCollectionTest</span>
+                  <span class="parameters">({extProductType=SAVINGS, mobileNumber=8778687679, baseOfficeId=1, businessRegistrationCountry=IN, agentDocumentPurpose=POI, annualTurnover=100000, state=bihar, transmission_datetime=Dynamic, isAuthorizedSignatory=YES, pincode=560100, identifier=EPJPS4262E, EXECUTIONMODE=YES, productId=54, ffbUserId=555, locality=Rajbanshi nagar, classification=SMALL, version=1, nationality=INDIAN, employeeMobileNumber=9878347893, status=SUCCESS, lastName=Agent, gender=MALE, city=patna, natureOfBusiness=TRAVEL_AGENT, geoHierarchyElementId=5, Partner Address Details=, Authorization=dynamic, handleValue=8274776372, DESCRIPTION=Happy flow:collection creation, tradeLicenseIssuingAuthority=OGA, AccountPurposeSettle=STL_ACCT, residentialStatus=, user_handle_value=admin, currency=INR, timestamp=1599729076322, dpdBucketId=2, actor_type=ADMIN, dateOfBirth=648153000000, accountNumber=98347293223, AccountPurposeComission=COMM_ACCT, parentId=2, employeePrimaryEmail=testnovopay@gmail.com, partnerDocumentType=PAN, run_mode=REAL, businessRegistrationNumber=U54326DL2017PLC865432, stan=Dynamic, validUntil=, user_handle_type=MSISDN, AddressType=OFFICE, client_code=novopay, codes=40038, employeeAddressType=PERMANENT, productSchemeId=85, routingValue=HDFC0004118, dueDate=2020-09-15, channel_code=API, function_code=COLLECTION, countryOfBirth=IN, TESTTYPE=Positive, addressLine1=#132,Grs tower, client_ip=172.16.8.245, addressLine2=near Bellanduru gate, primaryEmail=testNovopay@gmail.com, Accept=application/json, tradeLicenseExpiryDate=1657996200000, primaryPhoneNumber=9538948876, firstName=test, end_channel_code=Novopay, businessRegistrationAuthority=OGA, partnerDoucmentPurpose=POI, name=GOLU, salutation=MR, request=yes, preferredLanguage=, code=dynamic, description=Agent Document, shopName=GOLU BHARTI, relationshipWithEntity=, countryOfResidence=IN, partnerAdrressType=CORRESPONDENCE, productCategory=Grocery, function_sub_code=UPDATE, ageOfBusiness=10, routingType=ROUT_TYP_IFSC, street=road no 2, AccountPurposeTxn=TXN_ACCT, agentDocumentType=PAN, collectionId=568, Content-Type=application/json, headers=yes, amount=25000, roleId=22, operation_mode=SYSTEM, message=Agent (oKRSu) - Creation sent for approval, TCID=createOrUpdateCollection_001, PartnerDetails=, taxIdentificationNumber=ITIN18729, handleType=MSISDN, generatedDate=2020-09-06, location=42,23, middleName=midlle name, businessType=PROPRIETORSHIP, tenant_code=fk, externalAccountType=SAVINGS})</span>
+                  <div class="stack-trace">java.lang.AssertionError: TEST FAILED!!! Assertion error..!
+	at in.novopay.cbs.utils.ApiUtils.assertAPIResponseStatus(ApiUtils.java:304)
+	at in.novopay.cbs.apis.ActorMicroservice.createorupdatecollection.CreateOrUpdateCollectionTest.createOrUpdateCollectionTest(CreateOrUpdateCollectionTest.java:45)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Anurag Bharti\eclipse-workspace\CBS2\DemoData.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot;&gt;
+  &lt;test name=&quot;Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;in.novopay.cbs.apis.login.LoginTest&quot;/&gt;
+      &lt;class name=&quot;in.novopay.cbs.apis.ActorMicroservice.createorupdatecollection.CreateOrUpdateCollectionTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(2);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'loginTest')
+data.setCell(0, 2, 'in.novopay.cbs.apis.login.LoginTest')
+data.setCell(0, 3, 867);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'createOrUpdateCollectionTest')
+data.setCell(1, 2, 'in.novopay.cbs.apis.ActorMicroservice.createorupdatecollection.CreateOrUpdateCollectionTest')
+data.setCell(1, 3, 863);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">loginTest({codes=40033, request=Yes, channel_code=NOVOPAY, Authorization=no, function_sub_code=DEFAULT, passwo...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">
+Server URL : https://qa-nb-collections.novopay.in/api-gateway/api/novopay/v1/login</span>
+                <span class="reporter-method-output">
+Total time taken for the post request is : 0.798 Seconds ...</span>
+                <span class="reporter-method-output">
+Request sent is 
+{"headers":{"actor_type":"CUSTOMER","operation_mode":"SELF","channel_code":"NOVOPAY","locale":"en-in","function_sub_code":"DEFAULT","function_code":"DEFAULT","end_channel_code":"AIG","run_mode":"REAL","user_id":"46","stan":"XlPa1","user_handle_value":"admin","location":"44.968046,-94.420307","client_ip":"127.0.0.1","user_handle_type":"MSISDN","transmission_datetime":"1601893867776","client_code":"NOVOPAY","tenant_code":"fk"},"request":{"handle_value":"9122900031","auth_type":"MPIN","handle_type":"MSISDN","auth_value":"TzVVM1JyTk1WN21FNXdndTZIZFVaUHVQV3huZmw0aVpzNEw0UGxibk5XV3RzM1JuSUhzWEpwZ2t3eGk1ZDZkQ29PT3pORi96Q1UwTWVYRE84WkR5UHJBMVFLWnhtdVl2dDBmVHNoMDhnVmJSVmdVa20xaUFHZGlZd0RiRjMvNFhESFNVZmZtdC8vWlBacytQV1lyb1hQZm5xb2NWRnhBRjNBZDhHVVR3NHdpNlR2VHFhMkVROXphREVwdVJ2ei8vUUxHUHNJTXI5azlVMmxmUTBKRlNZQnBnMytxczFTTjZCRmxsbkhJZEluUG92L1BoaU04YndwUkYxdXc4YmpzQjgxaVdUM3FvbENIcjlBak1DTWU5S3RZbjVueHl2UTlvWCs5aWVmaDE3a1JsazFIbmxuRWxmZ3ZZMkVIanpvcXNjKzRMbzk4RHpqMG1RSGdoL3Q2WDl3PT0="}}</span>
+                <span class="reporter-method-output">
+Response Obtained : {"response_status":{"code":"220059","message":"Incorrect Username or Password","status":"FAIL"}}</span>
+                <span class="reporter-method-output">FAILURE..! Assertion for login response code failed..! expected [40033] but found [220059]</span>
+                <span class="reporter-method-output">FAILURE..! Assertion for login response status failed..! expected [SUCCESS] but found [FAIL]</span>
+                <span class="reporter-method-output">FAILURE..! Assertion for login response message failed..! expected [Encryption key fetched successfully] but found [Incorrect Username or Password]</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">createOrUpdateCollectionTest({extProductType=SAVINGS, mobileNumber=8778687679, baseOfficeId=1, businessRegistrationCountry=IN, ag...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">
+Server URL : https://qa-nb-collections.novopay.in/api-gateway/api/novopay/v1/createOrUpdateCollection</span>
+                <span class="reporter-method-output">
+Total time taken for the post request is : 0.746 Seconds ...</span>
+                <span class="reporter-method-output">
+Request sent is 
+{"headers":{"tenant_code":"fk","client_code":"novopay","channel_code":"API","end_channel_code":"Novopay","stan":"LxuIp","client_ip":"172.16.8.245","locale":"en-in","transmission_datetime":"1601893869177","operation_mode":"SYSTEM","run_mode":"REAL","actor_type":"ADMIN","user_handle_type":"MSISDN","user_handle_value":"admin","location":"42,23","function_code":"COLLECTION","function_sub_code":"UPDATE","user_id":"46"},"request":{"timestamp":"1599729076322","collectionId":"568","customer":{"ffbUserId":"555","name":"GOLU","shopName":"GOLU BHARTI","contactDetails":{"telecomContact":{"primaryPhoneNumber":"9538948876"},"postalContact":{"pincode":"560100","locality":"Rajbanshi nagar","street":"road no 2","city":"patna","state":"bihar"}}},"dueDetails":{"amount":"25000","generatedDate":"2020-09-06","dueDate":"2020-09-15","productCategory":"Grocery","dpdBucketId":"2"}}}</span>
+                <span class="reporter-method-output">
+Response Obtained : {"response_status":{"code":"11018","message":"Invalid Session","status":"FAIL"}}</span>
+                <span class="reporter-method-output">FAILURE..! Assertion for createOrUpdateCollection response code failed..! expected [40038] but found [11018]</span>
+                <span class="reporter-method-output">FAILURE..! Assertion for createOrUpdateCollection response status failed..! expected [SUCCESS] but found [FAIL]</span>
+                <span class="reporter-method-output">FAILURE..! Assertion for createOrUpdateCollection response message failed..! expected [Agent (oKRSu) - Creation sent for approval] but found [Invalid Session]</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">in.novopay.cbs.apis.ActorMicroservice.createorupdatecollection.CreateOrUpdateCollectionTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">readConfig</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">in.novopay.cbs.apis.login.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">readConfig</span>
+                <span class="method-start">20 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginTest({codes=40033, request=Yes, channel_code=NOVOPAY, Authorization=no, function_sub_code=DEFAULT, passwo...)</span>
+                <span class="method-start">4537 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">result([TestResult name=loginTest status=FAILURE method=LoginTest.loginTest(java.util.HashMap)[pri:0, insta...)</span>
+                <span class="method-start">5408 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">in.novopay.cbs.apis.ActorMicroservice.createorupdatecollection.CreateOrUpdateCollectionTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">createOrUpdateCollectionTest({extProductType=SAVINGS, mobileNumber=8778687679, baseOfficeId=1, businessRegistrationCountry=IN, ag...)</span>
+                <span class="method-start">5947 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">result([TestResult name=createOrUpdateCollectionTest status=FAILURE method=CreateOrUpdateCollectionTest.cre...)</span>
+                <span class="method-start">6812 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-suite after">
+                <span class="method-name">clearSessionToken</span>
+                <span class="method-start">6858 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

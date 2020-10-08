@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" total="2" passed="0">
+  <reporter-output>
+    <line>
+      <![CDATA[
+Server URL : https://qa-nb-collections.novopay.in/api-gateway/api/novopay/v1/getEncryptionKey]]>
+    </line>
+    <line>
+      <![CDATA[
+Total time taken for the post request is : 2.64 Seconds ...]]>
+    </line>
+    <line>
+      <![CDATA[
+Request sent is 
+{"headers":{"actor_type":"CUSTOMER","operation_mode":"SELF","channel_code":"NOVOPAY","locale":"en-in","function_sub_code":"DEFAULT","function_code":"DEFAULT","end_channel_code":"AIG","run_mode":"REAL","user_id":"46","stan":"IOQeg","user_handle_value":"admin","location":"44.968046,-94.420307","client_ip":"127.0.0.1","user_handle_type":"MSISDN","transmission_datetime":"1601893864346","client_code":"NOVOPAY","tenant_code":"fk"},"request":{"key_type":"MPIN-ENCRYPTION-KEY"}}]]>
+    </line>
+    <line>
+      <![CDATA[
+Response Obtained : {"response_status":{"code":"40032","message":"Encryption key fetched successfully","status":"SUCCESS"},"key_value":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAs+CLAhBZbP0MWBY5ka6EKCId2FAIV2ygFkNPhGfxXuqGNdQYRDwbSSYRRYwozRBnN4ooJ0XeGMofD9VLQWsCNvGmJxE2oC4wgDaYDWwjKfehFvwIs6RenJJa7RRcYwFsWAIHzvLHCxGugxAZbjLhMvP+1E0DAiSGN\/L\/UTdCkxfr4XzlTMi0kcirHLgiAdIIy7F7zRjtw6pcVkzRbwHOhT6rus4MpThYhMIoY6CYpwsF+ryqlqExl1bp0xydtf2CGFjKvlIxxU0yTMx1\/ce3ewmVpFKkNgfQOPOe18RGB45W6GjtCZAO5rSslg465T1bahrEABbEfSxBQDgARfLsVQIDAQAB"}]]>
+    </line>
+    <line>
+      <![CDATA[
+Response code Assertion successful..!]]>
+    </line>
+    <line>
+      <![CDATA[
+Response status assertion successful..!]]>
+    </line>
+    <line>
+      <![CDATA[
+Server URL : https://qa-nb-collections.novopay.in/api-gateway/api/novopay/v1/login]]>
+    </line>
+    <line>
+      <![CDATA[
+Total time taken for the post request is : 0.798 Seconds ...]]>
+    </line>
+    <line>
+      <![CDATA[
+Request sent is 
+{"headers":{"actor_type":"CUSTOMER","operation_mode":"SELF","channel_code":"NOVOPAY","locale":"en-in","function_sub_code":"DEFAULT","function_code":"DEFAULT","end_channel_code":"AIG","run_mode":"REAL","user_id":"46","stan":"XlPa1","user_handle_value":"admin","location":"44.968046,-94.420307","client_ip":"127.0.0.1","user_handle_type":"MSISDN","transmission_datetime":"1601893867776","client_code":"NOVOPAY","tenant_code":"fk"},"request":{"handle_value":"9122900031","auth_type":"MPIN","handle_type":"MSISDN","auth_value":"TzVVM1JyTk1WN21FNXdndTZIZFVaUHVQV3huZmw0aVpzNEw0UGxibk5XV3RzM1JuSUhzWEpwZ2t3eGk1ZDZkQ29PT3pORi96Q1UwTWVYRE84WkR5UHJBMVFLWnhtdVl2dDBmVHNoMDhnVmJSVmdVa20xaUFHZGlZd0RiRjMvNFhESFNVZmZtdC8vWlBacytQV1lyb1hQZm5xb2NWRnhBRjNBZDhHVVR3NHdpNlR2VHFhMkVROXphREVwdVJ2ei8vUUxHUHNJTXI5azlVMmxmUTBKRlNZQnBnMytxczFTTjZCRmxsbkhJZEluUG92L1BoaU04YndwUkYxdXc4YmpzQjgxaVdUM3FvbENIcjlBak1DTWU5S3RZbjVueHl2UTlvWCs5aWVmaDE3a1JsazFIbmxuRWxmZ3ZZMkVIanpvcXNjKzRMbzk4RHpqMG1RSGdoL3Q2WDl3PT0="}}]]>
+    </line>
+    <line>
+      <![CDATA[
+Response Obtained : {"response_status":{"code":"220059","message":"Incorrect Username or Password","status":"FAIL"}}]]>
+    </line>
+    <line>
+      <![CDATA[FAILURE..! Assertion for login response code failed..! expected [40033] but found [220059]]]>
+    </line>
+    <line>
+      <![CDATA[FAILURE..! Assertion for login response status failed..! expected [SUCCESS] but found [FAIL]]]>
+    </line>
+    <line>
+      <![CDATA[FAILURE..! Assertion for login response message failed..! expected [Encryption key fetched successfully] but found [Incorrect Username or Password]]]>
+    </line>
+    <line>
+      <![CDATA[
+Server URL : https://qa-nb-collections.novopay.in/api-gateway/api/novopay/v1/createOrUpdateCollection]]>
+    </line>
+    <line>
+      <![CDATA[
+Total time taken for the post request is : 0.746 Seconds ...]]>
+    </line>
+    <line>
+      <![CDATA[
+Request sent is 
+{"headers":{"tenant_code":"fk","client_code":"novopay","channel_code":"API","end_channel_code":"Novopay","stan":"LxuIp","client_ip":"172.16.8.245","locale":"en-in","transmission_datetime":"1601893869177","operation_mode":"SYSTEM","run_mode":"REAL","actor_type":"ADMIN","user_handle_type":"MSISDN","user_handle_value":"admin","location":"42,23","function_code":"COLLECTION","function_sub_code":"UPDATE","user_id":"46"},"request":{"timestamp":"1599729076322","collectionId":"568","customer":{"ffbUserId":"555","name":"GOLU","shopName":"GOLU BHARTI","contactDetails":{"telecomContact":{"primaryPhoneNumber":"9538948876"},"postalContact":{"pincode":"560100","locality":"Rajbanshi nagar","street":"road no 2","city":"patna","state":"bihar"}}},"dueDetails":{"amount":"25000","generatedDate":"2020-09-06","dueDate":"2020-09-15","productCategory":"Grocery","dpdBucketId":"2"}}}]]>
+    </line>
+    <line>
+      <![CDATA[
+Response Obtained : {"response_status":{"code":"11018","message":"Invalid Session","status":"FAIL"}}]]>
+    </line>
+    <line>
+      <![CDATA[FAILURE..! Assertion for createOrUpdateCollection response code failed..! expected [40038] but found [11018]]]>
+    </line>
+    <line>
+      <![CDATA[FAILURE..! Assertion for createOrUpdateCollection response status failed..! expected [SUCCESS] but found [FAIL]]]>
+    </line>
+    <line>
+      <![CDATA[FAILURE..! Assertion for createOrUpdateCollection response message failed..! expected [Agent (oKRSu) - Creation sent for approval] but found [Invalid Session]]]>
+    </line>
+  </reporter-output>
+  <suite name="Suite" duration-ms="2692" started-at="2020-10-05T10:31:07Z" finished-at="2020-10-05T10:31:10Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="2692" started-at="2020-10-05T10:31:07Z" finished-at="2020-10-05T10:31:10Z">
+      <class name="in.novopay.cbs.apis.ActorMicroservice.createorupdatecollection.CreateOrUpdateCollectionTest">
+        <test-method status="PASS" signature="readConfig()[pri:0, instance:in.novopay.cbs.apis.ActorMicroservice.createorupdatecollection.CreateOrUpdateCollectionTest@56235b8e]" name="readConfig" is-config="true" duration-ms="20" started-at="2020-10-05T16:01:03Z" finished-at="2020-10-05T16:01:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- readConfig -->
+        <test-method status="PASS" signature="readConfig()[pri:0, instance:in.novopay.cbs.apis.login.LoginTest@21213b92]" name="readConfig" is-config="true" duration-ms="4123" started-at="2020-10-05T16:01:03Z" finished-at="2020-10-05T16:01:07Z">
+          <reporter-output>
+            <line>
+              <![CDATA[
+Server URL : https://qa-nb-collections.novopay.in/api-gateway/api/novopay/v1/getEncryptionKey]]>
+            </line>
+            <line>
+              <![CDATA[
+Total time taken for the post request is : 2.64 Seconds ...]]>
+            </line>
+            <line>
+              <![CDATA[
+Request sent is 
+{"headers":{"actor_type":"CUSTOMER","operation_mode":"SELF","channel_code":"NOVOPAY","locale":"en-in","function_sub_code":"DEFAULT","function_code":"DEFAULT","end_channel_code":"AIG","run_mode":"REAL","user_id":"46","stan":"IOQeg","user_handle_value":"admin","location":"44.968046,-94.420307","client_ip":"127.0.0.1","user_handle_type":"MSISDN","transmission_datetime":"1601893864346","client_code":"NOVOPAY","tenant_code":"fk"},"request":{"key_type":"MPIN-ENCRYPTION-KEY"}}]]>
+            </line>
+            <line>
+              <![CDATA[
+Response Obtained : {"response_status":{"code":"40032","message":"Encryption key fetched successfully","status":"SUCCESS"},"key_value":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAs+CLAhBZbP0MWBY5ka6EKCId2FAIV2ygFkNPhGfxXuqGNdQYRDwbSSYRRYwozRBnN4ooJ0XeGMofD9VLQWsCNvGmJxE2oC4wgDaYDWwjKfehFvwIs6RenJJa7RRcYwFsWAIHzvLHCxGugxAZbjLhMvP+1E0DAiSGN\/L\/UTdCkxfr4XzlTMi0kcirHLgiAdIIy7F7zRjtw6pcVkzRbwHOhT6rus4MpThYhMIoY6CYpwsF+ryqlqExl1bp0xydtf2CGFjKvlIxxU0yTMx1\/ce3ewmVpFKkNgfQOPOe18RGB45W6GjtCZAO5rSslg465T1bahrEABbEfSxBQDgARfLsVQIDAQAB"}]]>
+            </line>
+            <line>
+              <![CDATA[
+Response code Assertion successful..!]]>
+            </line>
+            <line>
+              <![CDATA[
+Response status assertion successful..!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- readConfig -->
+        <test-method status="FAIL" signature="createOrUpdateCollectionTest(java.util.HashMap)[pri:0, instance:in.novopay.cbs.apis.ActorMicroservice.createorupdatecollection.CreateOrUpdateCollectionTest@56235b8e]" name="createOrUpdateCollectionTest" duration-ms="863" started-at="2020-10-05T16:01:09Z" data-provider="getTestData" finished-at="2020-10-05T16:01:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{extProductType=SAVINGS, mobileNumber=8778687679, baseOfficeId=1, businessRegistrationCountry=IN, agentDocumentPurpose=POI, annualTurnover=100000, state=bihar, transmission_datetime=Dynamic, isAuthorizedSignatory=YES, pincode=560100, identifier=EPJPS4262E, EXECUTIONMODE=YES, productId=54, ffbUserId=555, locality=Rajbanshi nagar, classification=SMALL, version=1, nationality=INDIAN, employeeMobileNumber=9878347893, status=SUCCESS, lastName=Agent, gender=MALE, city=patna, natureOfBusiness=TRAVEL_AGENT, geoHierarchyElementId=5, Partner Address Details=, Authorization=dynamic, handleValue=8274776372, DESCRIPTION=Happy flow:collection creation, tradeLicenseIssuingAuthority=OGA, AccountPurposeSettle=STL_ACCT, residentialStatus=, user_handle_value=admin, currency=INR, timestamp=1599729076322, dpdBucketId=2, actor_type=ADMIN, dateOfBirth=648153000000, accountNumber=98347293223, AccountPurposeComission=COMM_ACCT, parentId=2, employeePrimaryEmail=testnovopay@gmail.com, partnerDocumentType=PAN, run_mode=REAL, businessRegistrationNumber=U54326DL2017PLC865432, stan=Dynamic, validUntil=, user_handle_type=MSISDN, AddressType=OFFICE, client_code=novopay, codes=40038, employeeAddressType=PERMANENT, productSchemeId=85, routingValue=HDFC0004118, dueDate=2020-09-15, channel_code=API, function_code=COLLECTION, countryOfBirth=IN, TESTTYPE=Positive, addressLine1=#132,Grs tower, client_ip=172.16.8.245, addressLine2=near Bellanduru gate, primaryEmail=testNovopay@gmail.com, Accept=application/json, tradeLicenseExpiryDate=1657996200000, primaryPhoneNumber=9538948876, firstName=test, end_channel_code=Novopay, businessRegistrationAuthority=OGA, partnerDoucmentPurpose=POI, name=GOLU, salutation=MR, request=yes, preferredLanguage=, code=dynamic, description=Agent Document, shopName=GOLU BHARTI, relationshipWithEntity=, countryOfResidence=IN, partnerAdrressType=CORRESPONDENCE, productCategory=Grocery, function_sub_code=UPDATE, ageOfBusiness=10, routingType=ROUT_TYP_IFSC, street=road no 2, AccountPurposeTxn=TXN_ACCT, agentDocumentType=PAN, collectionId=568, Content-Type=application/json, headers=yes, amount=25000, roleId=22, operation_mode=SYSTEM, message=Agent (oKRSu) - Creation sent for approval, TCID=createOrUpdateCollection_001, PartnerDetails=, taxIdentificationNumber=ITIN18729, handleType=MSISDN, generatedDate=2020-09-06, location=42,23, middleName=midlle name, businessType=PROPRIETORSHIP, tenant_code=fk, externalAccountType=SAVINGS}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[TEST FAILED!!! Assertion error..!]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: TEST FAILED!!! Assertion error..!
+	at org.testng.Assert.fail(Assert.java:94)
+	at in.novopay.cbs.utils.ApiUtils.assertAPIResponseStatus(ApiUtils.java:304)
+	at in.novopay.cbs.apis.ActorMicroservice.createorupdatecollection.CreateOrUpdateCollectionTest.createOrUpdateCollectionTest(CreateOrUpdateCollectionTest.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[
+Server URL : https://qa-nb-collections.novopay.in/api-gateway/api/novopay/v1/createOrUpdateCollection]]>
+            </line>
+            <line>
+              <![CDATA[
+Total time taken for the post request is : 0.746 Seconds ...]]>
+            </line>
+            <line>
+              <![CDATA[
+Request sent is 
+{"headers":{"tenant_code":"fk","client_code":"novopay","channel_code":"API","end_channel_code":"Novopay","stan":"LxuIp","client_ip":"172.16.8.245","locale":"en-in","transmission_datetime":"1601893869177","operation_mode":"SYSTEM","run_mode":"REAL","actor_type":"ADMIN","user_handle_type":"MSISDN","user_handle_value":"admin","location":"42,23","function_code":"COLLECTION","function_sub_code":"UPDATE","user_id":"46"},"request":{"timestamp":"1599729076322","collectionId":"568","customer":{"ffbUserId":"555","name":"GOLU","shopName":"GOLU BHARTI","contactDetails":{"telecomContact":{"primaryPhoneNumber":"9538948876"},"postalContact":{"pincode":"560100","locality":"Rajbanshi nagar","street":"road no 2","city":"patna","state":"bihar"}}},"dueDetails":{"amount":"25000","generatedDate":"2020-09-06","dueDate":"2020-09-15","productCategory":"Grocery","dpdBucketId":"2"}}}]]>
+            </line>
+            <line>
+              <![CDATA[
+Response Obtained : {"response_status":{"code":"11018","message":"Invalid Session","status":"FAIL"}}]]>
+            </line>
+            <line>
+              <![CDATA[FAILURE..! Assertion for createOrUpdateCollection response code failed..! expected [40038] but found [11018]]]>
+            </line>
+            <line>
+              <![CDATA[FAILURE..! Assertion for createOrUpdateCollection response status failed..! expected [SUCCESS] but found [FAIL]]]>
+            </line>
+            <line>
+              <![CDATA[FAILURE..! Assertion for createOrUpdateCollection response message failed..! expected [Agent (oKRSu) - Creation sent for approval] but found [Invalid Session]]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- createOrUpdateCollectionTest -->
+        <test-method status="PASS" signature="result(org.testng.ITestResult)[pri:0, instance:in.novopay.cbs.apis.ActorMicroservice.createorupdatecollection.CreateOrUpdateCollectionTest@56235b8e]" name="result" is-config="true" duration-ms="21" started-at="2020-10-05T16:01:10Z" finished-at="2020-10-05T16:01:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=createOrUpdateCollectionTest status=FAILURE method=CreateOrUpdateCollectionTest.createOrUpdateCollectionTest(java.util.HashMap)[pri:0, instance:in.novopay.cbs.apis.ActorMicroservice.createorupdatecollection.CreateOrUpdateCollectionTest@56235b8e] output=
+Server URL : https://qa-nb-collections.novopay.in/api-gateway/api/novopay/v1/createOrUpdateCollection]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- result -->
+        <test-method status="PASS" signature="clearSessionToken()[pri:0, instance:in.novopay.cbs.apis.ActorMicroservice.createorupdatecollection.CreateOrUpdateCollectionTest@56235b8e]" name="clearSessionToken" is-config="true" duration-ms="0" started-at="2020-10-05T16:01:10Z" finished-at="2020-10-05T16:01:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearSessionToken -->
+      </class> <!-- in.novopay.cbs.apis.ActorMicroservice.createorupdatecollection.CreateOrUpdateCollectionTest -->
+      <class name="in.novopay.cbs.apis.login.LoginTest">
+        <test-method status="FAIL" signature="loginTest(java.util.HashMap)[pri:0, instance:in.novopay.cbs.apis.login.LoginTest@21213b92]" name="loginTest" duration-ms="867" started-at="2020-10-05T16:01:07Z" data-provider="getTestData" finished-at="2020-10-05T16:01:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{codes=40033, request=Yes, channel_code=NOVOPAY, Authorization=no, function_sub_code=DEFAULT, password=real, function_code=DEFAULT, DESCRIPTION=Happy flow., TESTTYPE=Positive, user_handle_value=admin, client_ip=127.0.0.1, Content-Type=application/json, transmission_datetime=Dynamic, handle_value=9122900031, headers=Yes, auth_type=MPIN, EXECUTIONMODE=Yes, Accept=application/json, actor_type=CUSTOMER, operation_mode=SELF, auth_value=1234, message=Encryption key fetched successfully, TCID=LoginTest_001, handle_type=MSISDN, end_channel_code=AIG, run_mode=REAL, stan=Dynamic, location=44.968046,-94.420307, user_handle_type=MSISDN, status=SUCCESS, tenant_code=fk, client_code=NOVOPAY}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[TEST FAILED!!! Assertion error..!]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: TEST FAILED!!! Assertion error..!
+	at org.testng.Assert.fail(Assert.java:94)
+	at in.novopay.cbs.utils.ApiUtils.assertAPIResponseStatus(ApiUtils.java:304)
+	at in.novopay.cbs.apis.login.LoginTest.loginTest(LoginTest.java:49)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[
+Server URL : https://qa-nb-collections.novopay.in/api-gateway/api/novopay/v1/login]]>
+            </line>
+            <line>
+              <![CDATA[
+Total time taken for the post request is : 0.798 Seconds ...]]>
+            </line>
+            <line>
+              <![CDATA[
+Request sent is 
+{"headers":{"actor_type":"CUSTOMER","operation_mode":"SELF","channel_code":"NOVOPAY","locale":"en-in","function_sub_code":"DEFAULT","function_code":"DEFAULT","end_channel_code":"AIG","run_mode":"REAL","user_id":"46","stan":"XlPa1","user_handle_value":"admin","location":"44.968046,-94.420307","client_ip":"127.0.0.1","user_handle_type":"MSISDN","transmission_datetime":"1601893867776","client_code":"NOVOPAY","tenant_code":"fk"},"request":{"handle_value":"9122900031","auth_type":"MPIN","handle_type":"MSISDN","auth_value":"TzVVM1JyTk1WN21FNXdndTZIZFVaUHVQV3huZmw0aVpzNEw0UGxibk5XV3RzM1JuSUhzWEpwZ2t3eGk1ZDZkQ29PT3pORi96Q1UwTWVYRE84WkR5UHJBMVFLWnhtdVl2dDBmVHNoMDhnVmJSVmdVa20xaUFHZGlZd0RiRjMvNFhESFNVZmZtdC8vWlBacytQV1lyb1hQZm5xb2NWRnhBRjNBZDhHVVR3NHdpNlR2VHFhMkVROXphREVwdVJ2ei8vUUxHUHNJTXI5azlVMmxmUTBKRlNZQnBnMytxczFTTjZCRmxsbkhJZEluUG92L1BoaU04YndwUkYxdXc4YmpzQjgxaVdUM3FvbENIcjlBak1DTWU5S3RZbjVueHl2UTlvWCs5aWVmaDE3a1JsazFIbmxuRWxmZ3ZZMkVIanpvcXNjKzRMbzk4RHpqMG1RSGdoL3Q2WDl3PT0="}}]]>
+            </line>
+            <line>
+              <![CDATA[
+Response Obtained : {"response_status":{"code":"220059","message":"Incorrect Username or Password","status":"FAIL"}}]]>
+            </line>
+            <line>
+              <![CDATA[FAILURE..! Assertion for login response code failed..! expected [40033] but found [220059]]]>
+            </line>
+            <line>
+              <![CDATA[FAILURE..! Assertion for login response status failed..! expected [SUCCESS] but found [FAIL]]]>
+            </line>
+            <line>
+              <![CDATA[FAILURE..! Assertion for login response message failed..! expected [Encryption key fetched successfully] but found [Incorrect Username or Password]]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="result(org.testng.ITestResult)[pri:0, instance:in.novopay.cbs.apis.login.LoginTest@21213b92]" name="result" is-config="true" duration-ms="254" started-at="2020-10-05T16:01:08Z" finished-at="2020-10-05T16:01:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginTest status=FAILURE method=LoginTest.loginTest(java.util.HashMap)[pri:0, instance:in.novopay.cbs.apis.login.LoginTest@21213b92] output=
+Server URL : https://qa-nb-collections.novopay.in/api-gateway/api/novopay/v1/login]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- result -->
+      </class> <!-- in.novopay.cbs.apis.login.LoginTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
