@@ -7,12 +7,10 @@
         <methods>
           <include name="result"/>
           <include name="readConfig"/>
-          <include name="loginTest" invocation-numbers="0"/>
         </methods>
       </class> <!-- in.novopay.cbs.apis.login.LoginTest -->
       <class name="in.novopay.cbs.apis.ActorMicroservice.createorupdatecollection.CreateOrUpdateCollectionTest">
         <methods>
-          <include name="clearSessionToken"/>
           <include name="result"/>
           <include name="readConfig"/>
           <include name="createOrUpdateCollectionTest" invocation-numbers="0"/>

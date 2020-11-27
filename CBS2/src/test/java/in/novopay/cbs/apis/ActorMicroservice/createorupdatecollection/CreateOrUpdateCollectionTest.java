@@ -15,7 +15,7 @@ import in.novopay.cbs.utils.JavaUtils;
 
 public class CreateOrUpdateCollectionTest {
 
-	public String APINAME = "createOrUpdateCollection", testType = "Positive", packageName="createorupdatecollection",
+	public String APINAME = "createOrUpdateCollection", testType = "Negative", packageName="createorupdatecollection",
 			workbook = "actorWorkbook", serviceName = "ACTOR", sheetName="createOrUpdateCollection";
 	JavaUtils javaUtils = new JavaUtils();
 	CreateOrUpdateCollection createOrUpdateCollection;
